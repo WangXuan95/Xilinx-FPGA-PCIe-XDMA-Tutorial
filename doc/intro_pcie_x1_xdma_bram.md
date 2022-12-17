@@ -1,6 +1,6 @@
 # 基于 Verilog 的 PCIe BRAM 读写工程
 
-该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_bram](../netfpga_pcie_x1_xdma_bram) 中。
+该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_bram.zip](../netfpga_pcie_x1_xdma_bram.zip) 中。
 
 该例程的结构框图如下图。其中包括：
 

@@ -1,6 +1,6 @@
 # 基于 blockdesign 的 PCIe BRAM 读写——Vivado 工程搭建
 
-该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_bram_blockdesign](../netfpga_pcie_x1_xdma_bram_blockdesign) 中
+该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_bram_blockdesign.zip](../netfpga_pcie_x1_xdma_bram_blockdesign.zip) 中
 
 该例程的结构框图如**图1** 。其中包括：
 

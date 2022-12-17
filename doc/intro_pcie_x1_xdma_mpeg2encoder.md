@@ -1,6 +1,6 @@
 # 基于 Verilog 的 PCIe MPEG2 视频编码
 
-该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_mpeg2encoder](../netfpga_pcie_x1_xdma_mpeg2encoder) 中。
+该例程对应的 Vivado 工程在 [netfpga_pcie_x1_xdma_mpeg2encoder.zip](../netfpga_pcie_x1_xdma_mpeg2encoder.zip) 中。
 
 该例程的结构如下图。其中包括
 

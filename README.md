@@ -88,7 +88,7 @@ PCIe (PCI Express) 是一种差分信号对的高速外设总线。目前具有�
 
 > 　　***if***   ( 你熟悉 Vivado blockdesign 的开发流程 ) {
 >
-> 　　　　直接打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_bram_blockdesign](./netfpga_pcie_x1_xdma_bram_blockdesign) 
+> 　　　　解压、打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_bram_blockdesign.zip](./netfpga_pcie_x1_xdma_bram_blockdesign.zip) 
 >
 > 　　} ***else*** {
 >
@@ -117,15 +117,9 @@ PCIe (PCI Express) 是一种差分信号对的高速外设总线。目前具有�
 
 请按照以下流程学习本例程：
 
-> 　　　　打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_bram](./netfpga_pcie_x1_xdma_bram) 
+> 　　　　解压、打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_bram.zip](./netfpga_pcie_x1_xdma_bram.zip) 
 >
 > 　　　　***if***   ( 你看不懂该工程中的 AXI 相关代码 ) {
->
-> 　　　　　　***if***  ( 你不熟悉 Verilog 基础语法 ) {
->
-> 　　　　　　　　学习 Verilog 基础语法
->
-> 　　　　　　}
 >
 > 　　　　　　阅读 [doc/intro_pcie_x1_xdma_bram.md](./doc/intro_pcie_x1_xdma_bram.md) ，理解如何用 Verilog 编写简单的 AXI-BRAM 存储器
 >
@@ -175,15 +169,9 @@ PCIe (PCI Express) 是一种差分信号对的高速外设总线。目前具有�
 
 请按照以下流程学习本例程：
 
-> 　　　　打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_mpeg2encoder](./netfpga_pcie_x1_xdma_mpeg2encoder) 
+> 　　　　打开并查看 Vivado 工程 [netfpga_pcie_x1_xdma_mpeg2encoder.zip](./netfpga_pcie_x1_xdma_mpeg2encoder.zip) 
 >
 > 　　　　***if***   ( 你看不懂该工程中的 AXI 相关代码 ) {
->
-> 　　　　　　***if***  ( 你不熟悉 Verilog 基础语法 ) {
->
-> 　　　　　　　　学习 Verilog 基础语法
->
-> 　　　　　　}
 >
 > 　　　　　　阅读 [doc/intro_pcie_x1_xdma_bram.md](./doc/intro_pcie_x1_xdma_bram.md) ，理解 AXI 总线时序
 >
