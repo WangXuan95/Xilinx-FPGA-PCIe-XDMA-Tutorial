@@ -1,0 +1,246 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD1DA1B4EB9A401C5",
+      "device": "xc7vx690tffg1761-3",
+      "name": "xdma_bram",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xdma_0": "",
+      "axi_bram_ctrl_0": "",
+      "xlconstant_0": "",
+      "axi_bram_ctrl_0_bram": ""
+    },
+    "interface_ports": {
+      "pcie_mgt_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:pcie_7x_mgt_rtl:1.0"
+      }
+    },
+    "ports": {
+      "user_lnk_up_0": {
+        "direction": "O"
+      },
+      "sys_clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "xdma_bram_sys_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "sys_rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "xdma_0": {
+        "vlnv": "xilinx.com:ip:xdma:4.1",
+        "xci_name": "xdma_bram_xdma_0_0",
+        "parameters": {
+          "PF0_DEVICE_ID_mqdma": {
+            "value": "9021"
+          },
+          "PF2_DEVICE_ID_mqdma": {
+            "value": "9021"
+          },
+          "PF3_DEVICE_ID_mqdma": {
+            "value": "9021"
+          },
+          "axist_bypass_en": {
+            "value": "true"
+          },
+          "axisten_freq": {
+            "value": "62.5"
+          },
+          "cfg_mgmt_if": {
+            "value": "false"
+          },
+          "pcie_blk_locn": {
+            "value": "X0Y1"
+          },
+          "pcie_extended_tag": {
+            "value": "false"
+          },
+          "pf0_class_code_base": {
+            "value": "05"
+          },
+          "pf0_class_code_interface": {
+            "value": "00"
+          },
+          "pf0_class_code_sub": {
+            "value": "80"
+          },
+          "pf0_device_id": {
+            "value": "7021"
+          },
+          "pf0_interrupt_pin": {
+            "value": "NONE"
+          },
+          "pf0_msi_enabled": {
+            "value": "false"
+          },
+          "pf0_msix_cap_pba_offset": {
+            "value": "00008FE0"
+          },
+          "pf0_msix_cap_table_offset": {
+            "value": "00008000"
+          },
+          "pf0_msix_cap_table_size": {
+            "value": "01F"
+          },
+          "pf0_msix_enabled": {
+            "value": "true"
+          },
+          "pf0_sub_class_interface_menu": {
+            "value": "Generic_XT_compatible_serial_controller"
+          },
+          "pl_link_cap_max_link_speed": {
+            "value": "5.0_GT/s"
+          },
+          "plltype": {
+            "value": "QPLL1"
+          },
+          "xdma_num_usr_irq": {
+            "value": "16"
+          }
+        }
+      },
+      "axi_bram_ctrl_0": {
+        "vlnv": "xilinx.com:ip:axi_bram_ctrl:4.1",
+        "xci_name": "xdma_bram_axi_bram_ctrl_0_2",
+        "parameters": {
+          "DATA_WIDTH": {
+            "value": "64"
+          },
+          "SINGLE_PORT_BRAM": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "xdma_bram_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "axi_bram_ctrl_0_bram": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "xdma_bram_axi_bram_ctrl_0_bram_0"
+      }
+    },
+    "interface_nets": {
+      "xdma_0_pcie_mgt": {
+        "interface_ports": [
+          "pcie_mgt_0",
+          "xdma_0/pcie_mgt"
+        ]
+      },
+      "xdma_0_M_AXI": {
+        "interface_ports": [
+          "xdma_0/M_AXI",
+          "axi_bram_ctrl_0/S_AXI"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_0_bram/BRAM_PORTA",
+          "axi_bram_ctrl_0/BRAM_PORTA"
+        ]
+      }
+    },
+    "nets": {
+      "xdma_0_axi_aclk": {
+        "ports": [
+          "xdma_0/axi_aclk",
+          "axi_bram_ctrl_0/s_axi_aclk"
+        ]
+      },
+      "xdma_0_axi_aresetn": {
+        "ports": [
+          "xdma_0/axi_aresetn",
+          "axi_bram_ctrl_0/s_axi_aresetn"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "xdma_0/usr_irq_req"
+        ]
+      },
+      "xdma_0_user_lnk_up": {
+        "ports": [
+          "xdma_0/user_lnk_up",
+          "user_lnk_up_0"
+        ]
+      },
+      "sys_clk_0_1": {
+        "ports": [
+          "sys_clk_0",
+          "xdma_0/sys_clk"
+        ]
+      },
+      "sys_rst_n_0_1": {
+        "ports": [
+          "sys_rst_n_0",
+          "xdma_0/sys_rst_n"
+        ]
+      }
+    },
+    "addressing": {
+      "/xdma_0": {
+        "address_spaces": {
+          "M_AXI": {
+            "range": "16E",
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0x0000000000000000",
+                "range": "512K"
+              }
+            }
+          },
+          "M_AXI_BYPASS": {
+            "range": "16E",
+            "width": "32"
+          }
+        }
+      }
+    }
+  }
+}
