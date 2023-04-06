@@ -633,7 +633,7 @@ static struct xdma_transfer *engine_start(struct xdma_engine *engine)
 
 	dbg_tfr("ioread32(0x%p) (dummy read flushes writes).\n",
 		&engine->regs->status);
-	mmiowb();
+	wmb(); //!
 
 	engine_start_mode_config(engine);
 

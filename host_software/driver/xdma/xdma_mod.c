@@ -27,6 +27,7 @@
 #define DRV_MODULE_DESC		"Xilinx XDMA Reference Driver"
 #define DRV_MODULE_RELDATE	"Feb. 2018"
 
+
 static char version[] =
 	DRV_MODULE_DESC " " DRV_MODULE_NAME " v" DRV_MODULE_VERSION "\n";
 
@@ -257,7 +258,8 @@ static void xdma_error_resume(struct pci_dev *pdev)
 	struct xdma_pci_dev *xpdev = dev_get_drvdata(&pdev->dev);
 
 	pr_info("dev 0x%p,0x%p.\n", pdev, xpdev);
-	pci_cleanup_aer_uncorrect_error_status(pdev);
+	//!pci_cleanup_aer_uncorrect_error_status(pdev);
+	pci_aer_clear_nonfatal_status(pdev);
 }
 
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(4,13,0)

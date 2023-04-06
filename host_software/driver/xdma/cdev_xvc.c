@@ -203,7 +203,7 @@ cleanup:
 	if (buffer)
 		kfree(buffer);
 
-	mmiowb();
+	wmb(); //!
 	spin_unlock(&xcdev->lock);
 
 	return rv;
