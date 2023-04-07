@@ -1,0 +1,1 @@
+cmd_/home/redlight/test/Xilinx-FPGA-PCIe-XDMA-Tutorial/host_software/driver/XDMA/linux-kernel/xdma/modules.order := {   echo /home/redlight/test/Xilinx-FPGA-PCIe-XDMA-Tutorial/host_software/driver/XDMA/linux-kernel/xdma/xdma.ko; :; } | awk '!x[$$0]++' - > /home/redlight/test/Xilinx-FPGA-PCIe-XDMA-Tutorial/host_software/driver/XDMA/linux-kernel/xdma/modules.order
