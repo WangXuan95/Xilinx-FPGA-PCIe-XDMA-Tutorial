@@ -1,2 +1,0 @@
-/home/wangxuan/pcie_xdma_host_software/driver/xdma/xdma.ko
-/home/wangxuan/pcie_xdma_host_software/driver/xdma/libxdma.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/xdma_cdev.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/cdev_ctrl.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/cdev_events.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/cdev_sgdma.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/cdev_xvc.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/cdev_bypass.o /home/wangxuan/pcie_xdma_host_software/driver/xdma/xdma_mod.o
